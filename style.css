@@ -7,17 +7,22 @@
 }
 
 body {
-    height: 100vh;
     background-color: aliceblue;
 }
 
 .container {
-    height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.stopwatch-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
@@ -38,10 +43,12 @@ h1 {
 }
 
 button {
-    width: 100px;
+    text-align: center;
+    width: 150px;
     height: 40px;
     margin: 0 10px;
-    font-size: 20px;
+    font-size: 14px;
+    font-weight: bold;
     text-transform: uppercase;
     border-radius: 20px;
     outline: none;
@@ -58,6 +65,14 @@ button:hover {
 button:active {
     transform: scale(0.98);
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.createStopwatch {
+    width: auto;
+    height: auto;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 50px;
 }
 
 .laps-container {
